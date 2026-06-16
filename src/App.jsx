@@ -1,10 +1,15 @@
-import React, { useMemo, useState } from 'react';
-import { BrowserRouter, Link, NavLink, Routes, Route, useNavigate, useParams } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Link, Routes, Route, useNavigate, useParams } from 'react-router-dom';
 import { ChronikClient } from 'chronik-client';
 import * as ecashaddr from 'ecashaddrjs';
 import { LINAJE_SLUG_INDEX, findLinajeTxidBySlug } from './data/linajeIndex';
 import { LINAJE_EDITORIAL_META, resolveLinajeMeta } from './data/linajeMeta';
 import { XoloCard } from './components/XoloCard';
+import { AppShell } from './components/AppShell';
+import { SearchBar as AccessibleSearchBar } from './components/SearchBar';
+import { PageStatus } from './components/PageStatus';
+import { PageSkeleton } from './components/PageSkeleton';
+import { useDocumentTitle } from './hooks/useDocumentTitle';
 import {
   extractTokenDocumentUrl,
   fetchIpfsMetadataByDocumentUrl,
@@ -17,6 +22,8 @@ const chronik = new ChronikClient(CHRONIK_URL);
 const RMZ_TOKEN_ID = (import.meta.env.VITE_RMZ_TOKEN_ID || '').trim().toLowerCase();
 const tokenIpfsMetadataByIdCache = new Map();
 const tokenIpfsMetadataPromiseById = new Map();
+const LazyHomePage = React.lazy(() => import('./pages/HomePage.jsx'));
+// TODO: Extraer las páginas restantes cuando los helpers Chronik/IPFS/linaje estén desacoplados del módulo principal.
 
 function detectQueryType(value) {
   const q = value.trim();
@@ -220,7 +227,7 @@ function buildArchiveNameVariants(value) {
   register(value.replace(/\([^)]*\)/g, ' '));
   register(value.replace(/\[[^\]]*\]/g, ' '));
   register(value.replace(/\{[^}]*\}/g, ' '));
-  register(value.replace(/[\(\[\{].*$/, ' '));
+  register(value.replace(/[([{].*$/, ' '));
   register(value.replace(/\([^)]*\)/g, ' ').replace(/\b(?:mex|mexico|mx)\.?$/i, ' '));
   register(slugify(value).replace(/-/g, ' '));
 
@@ -758,7 +765,7 @@ function useTokenIpfsMetadata(tokenId, tokenMeta = null) {
     }
 
     return () => { mounted = false; };
-  }, [normalizedTokenId, documentUrl]);
+  }, [normalizedTokenId, documentUrl, tokenMeta]);
 
   return state;
 }
@@ -880,163 +887,20 @@ function Box({ children, style = {} }) {
   );
 }
 
-const navLinkStyle = ({ isActive }) => ({
-  color: isActive ? '#050505' : '#7ce9f4',
-  textDecoration: 'none',
-  border: `1px solid ${isActive ? '#00eaff' : '#194a52'}`,
-  background: isActive ? '#00eaff' : '#09181d',
-  padding: '8px 12px',
-  fontSize: '0.88rem',
-  letterSpacing: '0.03em',
-});
-
-function GlobalNav() {
-  return (
-    <div
-      style={{
-        position: 'sticky',
-        top: 0,
-        zIndex: 20,
-        marginBottom: '24px',
-        paddingBottom: '12px',
-        borderBottom: '1px solid #17454e',
-        background: 'linear-gradient(180deg, rgba(5,5,5,0.98) 0%, rgba(5,5,5,0.9) 100%)',
-        backdropFilter: 'blur(4px)',
-      }}
-    >
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap' }}>
-        <Link to="/" style={{ color: '#00eaff', textDecoration: 'none', fontWeight: 'bold', letterSpacing: '0.04em' }}>
-          XOLOS EXPLORER
-        </Link>
-        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-          <NavLink to="/" end style={navLinkStyle}>Home</NavLink>
-          <NavLink to="/explorer" style={navLinkStyle}>Explorer</NavLink>
-          <NavLink to="/linaje" style={navLinkStyle}>Linaje</NavLink>
-          <NavLink to="/collection/xolosnft" style={navLinkStyle}>Colección</NavLink>
-          <NavLink to="/status" style={navLinkStyle}>Nodo</NavLink>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function Shell({ children }) {
-  return (
-    <div
-      style={{
-        background: '#050505',
-        color: '#00eaff',
-        minHeight: '100vh',
-        padding: '22px',
-        fontFamily: 'monospace',
-      }}
-    >
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <GlobalNav />
-        {children}
-      </div>
-    </div>
-  );
+  return <AppShell>{children}</AppShell>;
 }
 
 function SearchBar() {
-  const [query, setQuery] = useState('');
-  const navigate = useNavigate();
-  const queryType = useMemo(() => detectQueryType(query), [query]);
-
-  function handleGo() {
-    const q = query.trim();
-    if (!q) return;
-
-    if (queryType === 'block-height') {
-      navigate(`/block/${q}`);
-      return;
-    }
-
-    if (queryType === 'address') {
-      navigate(`/address/${encodeURIComponent(q)}`);
-      return;
-    }
-
-    if (queryType === 'hash') {
-      navigate(`/search/${q}`);
-      return;
-    }
-
-    alert('Entrada no reconocida. Usa una altura, dirección ecash: o hash de 64 caracteres.');
-  }
-
-  return (
-    <>
-      <input
-        placeholder="Buscar bloque, txid, token id o dirección ecash..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyDown={(e) => e.key === 'Enter' && handleGo()}
-        style={{
-          width: '100%',
-          padding: '14px',
-          background: '#111',
-          border: '1px solid #00eaff',
-          color: '#00eaff',
-          fontSize: '1rem',
-        }}
-      />
-
-      <div style={{ marginTop: '10px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-        <button
-          onClick={handleGo}
-          style={{
-            padding: '12px 18px',
-            background: '#00eaff',
-            border: 'none',
-            color: '#000',
-            cursor: 'pointer',
-            fontWeight: 'bold',
-          }}
-        >
-          Buscar
-        </button>
-
-        <button
-          onClick={() => navigate('/block/9000')}
-          style={{
-            padding: '12px 18px',
-            background: '#111',
-            border: '1px solid #00eaff',
-            color: '#00eaff',
-            cursor: 'pointer',
-          }}
-        >
-          Ejemplo bloque
-        </button>
-      </div>
-
-      <p style={{ marginTop: '12px', color: '#8ff7ff' }}>
-        Tipo detectado: <strong>{queryType}</strong>
-      </p>
-    </>
-  );
+  return <AccessibleSearchBar detectQueryType={detectQueryType} />;
 }
 
-function LoadingBox({ text = 'Olfateando la blockchain...' }) {
-  return <Box style={{ marginTop: '20px' }}>{text}</Box>;
+function LoadingBox({ text = 'Cargando datos de blockchain...' }) {
+  return <PageSkeleton text={text} />;
 }
 
 function ErrorBox({ error }) {
-  return (
-    <div
-      style={{
-        marginTop: '20px',
-        border: '1px solid #ff5c5c',
-        background: '#1a0b0b',
-        color: '#ff9e9e',
-        padding: '14px',
-      }}
-    >
-      {error}
-    </div>
-  );
+  return <PageStatus type="error">{error}</PageStatus>;
 }
 
 function StatGrid({ items }) {
@@ -1182,6 +1046,7 @@ function LinajeCard({
             src={mediaUrl}
             alt={imageAlt}
             loading="lazy"
+            decoding="async"
             style={{ width: '100%', height: '100%', maxHeight: '320px', objectFit: 'cover', display: 'block' }}
             onError={() => setImageFailed(true)}
           />
@@ -1426,6 +1291,7 @@ function LinajeGalleryCard({ record }) {
             src={mediaUrl}
             alt={imageAlt}
             loading="lazy"
+            decoding="async"
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             onError={() => setImageFailed(true)}
           />
@@ -1869,6 +1735,7 @@ function RelatedXoloPreviewCard({ target }) {
               src={preview.imageUrl}
               alt={preview.title}
               loading="lazy"
+            decoding="async"
               onError={() => setImageFailed(true)}
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
@@ -2041,6 +1908,7 @@ function NftCollectibleCard({ item }) {
             src={imageUrl}
             alt={resolvedName.value}
             loading="lazy"
+            decoding="async"
             style={{ width: '100%', height: '110px', objectFit: 'cover', display: 'block' }}
             onError={() => setImageFailed(true)}
           />
@@ -2135,6 +2003,7 @@ function XoloNftCollectionCard({ item }) {
             src={resolvedItem.imageUrl}
             alt={item.imageAlt || resolvedItem.title}
             loading="lazy"
+            decoding="async"
             style={{ width: '100%', height: '120px', objectFit: 'cover', display: 'block' }}
             onError={() => setImageFailed(true)}
           />
@@ -2212,6 +2081,7 @@ function XoloNftCollectionCard({ item }) {
 }
 
 function XoloNftCollectionPage() {
+  useDocumentTitle('Colección XOLOSNFT');
   const [query, setQuery] = React.useState('');
 
   const collectionItems = React.useMemo(() => buildXoloNftCollectionItems(), []);
@@ -2316,6 +2186,7 @@ function XoloNftCodexCard({ item }) {
             src={resolvedItem.imageUrl}
             alt={item.imageAlt || resolvedItem.title}
             loading="lazy"
+            decoding="async"
             style={{ width: '100%', minHeight: '220px', maxHeight: '320px', objectFit: 'cover', display: 'block' }}
             onError={() => setImageFailed(true)}
           />
@@ -2411,6 +2282,7 @@ function XoloNftCodexCard({ item }) {
 }
 
 function XoloNftCodexPage() {
+  useDocumentTitle('Códice XOLOSNFT');
   const [query, setQuery] = React.useState('');
   const collectionItems = React.useMemo(() => buildXoloNftCollectionItems(), []);
   const filteredItems = React.useMemo(() => {
@@ -2470,6 +2342,7 @@ function XoloNftCodexPage() {
 
 function XoloNftCollectionItemPage() {
   const { slug } = useParams();
+  useDocumentTitle(slug ? `XOLOSNFT ${slug}` : 'XOLOSNFT');
   const [imageFailed, setImageFailed] = React.useState(false);
   const collectionItems = React.useMemo(() => buildXoloNftCollectionItems(), []);
   const normalizedSlug = slugify((slug || '').trim());
@@ -2506,6 +2379,10 @@ function XoloNftCollectionItemPage() {
     [item, ipfsState.metadata],
   );
 
+  React.useEffect(() => {
+    setImageFailed(false);
+  }, [resolvedItem?.imageUrl]);
+
   if (!item) {
     return (
       <Shell>
@@ -2528,10 +2405,6 @@ function XoloNftCollectionItemPage() {
   const resolvedMetaLabelStyle = { ...metaLabelStyle, color: themeStyles.label };
   const resolvedMetaValueStyle = { ...metaValueStyle, color: themeStyles.value };
   const showImage = Boolean(resolvedItem.imageUrl) && !imageFailed;
-
-  React.useEffect(() => {
-    setImageFailed(false);
-  }, [resolvedItem.imageUrl]);
 
   return (
     <Shell>
@@ -2575,6 +2448,8 @@ function XoloNftCollectionItemPage() {
             <img
               src={resolvedItem.imageUrl}
               alt={item.imageAlt || resolvedItem.title}
+              loading="lazy"
+              decoding="async"
               style={{ width: '100%', minHeight: '320px', maxHeight: '520px', objectFit: 'cover', display: 'block' }}
               onError={() => setImageFailed(true)}
             />
@@ -2854,51 +2729,8 @@ function InputsTable({ inputs = [] }) {
   );
 }
 
-function HomePage() {
-  return (
-    <Shell>
-      <div style={{ marginBottom: '20px' }}>
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '8px' }}>XOLOS EXPLORER</h1>
-        <p style={{ color: '#8ff7ff', marginBottom: '16px' }}>
-          Explorador mínimo avanzado conectado a tu Chronik soberano
-        </p>
-        <Box style={{ marginBottom: '16px' }}>
-          <div><strong>Endpoint:</strong> {CHRONIK_URL}</div>
-        </Box>
-      </div>
-      <SearchBar />
-      <StatGrid
-        items={[
-          { label: 'Ruta Explorer', value: <Link to="/explorer" style={{ color: '#00eaff' }}>/explorer</Link> },
-          { label: 'Ruta Linaje', value: <Link to="/linaje" style={{ color: '#00eaff' }}>/linaje</Link> },
-          { label: 'Bloque ejemplo', value: <Link to="/block/9000" style={{ color: '#00eaff' }}>/block/9000</Link> },
-        ]}
-      />
-      <div
-        style={{
-          marginTop: '18px',
-          padding: '10px 12px',
-          border: '1px solid #1f464d',
-          background: '#081216',
-          color: '#78cad2',
-          fontSize: '0.88rem',
-        }}
-      >
-        Explora el ecosistema cultural y blockchain de XolosArmy:{' '}
-        <a
-          href="https://xolosarmy.xyz"
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: '#8de6ef', textDecoration: 'none' }}
-        >
-          más sobre el proyecto →
-        </a>
-      </div>
-    </Shell>
-  );
-}
-
 function StatusPage() {
+  useDocumentTitle('Estado del nodo');
   const [state, setState] = React.useState({ loading: true, error: '', info: null });
 
   React.useEffect(() => {
@@ -2948,6 +2780,7 @@ function StatusPage() {
 }
 
 function ExplorerPage() {
+  useDocumentTitle('Explorer');
   const [state, setState] = React.useState({
     loading: true,
     error: '',
@@ -3052,6 +2885,7 @@ function ExplorerPage() {
 }
 
 function LinajePage() {
+  useDocumentTitle('Linaje');
   const [state, setState] = React.useState({
     loading: true,
     error: '',
@@ -3280,6 +3114,7 @@ function LinajePage() {
 
 function LinajeRecordPage() {
   const { txidOrSlug } = useParams();
+  useDocumentTitle(txidOrSlug ? `Linaje ${txidOrSlug}` : 'Registro de linaje');
   const [state, setState] = React.useState({
     loading: true,
     error: '',
@@ -3499,6 +3334,7 @@ function LinajeRecordPage() {
 
 function BlockPage() {
   const { height } = useParams();
+  useDocumentTitle(height ? `Bloque ${height}` : 'Bloque');
   const [state, setState] = React.useState({ loading: true, error: '', data: null });
 
   React.useEffect(() => {
@@ -3562,6 +3398,7 @@ function BlockPage() {
 
 function TxPage() {
   const { txid } = useParams();
+  useDocumentTitle(txid ? `TX ${shortHex(txid, 12, 8)}` : 'Transacción');
   const [state, setState] = React.useState({ loading: true, error: '', data: null });
 
   React.useEffect(() => {
@@ -3621,6 +3458,7 @@ function TxPage() {
 
 function AddressPage() {
   const { address } = useParams();
+  useDocumentTitle('Dirección');
   const decodedAddress = decodeURIComponent(address || '');
   const [state, setState] = React.useState({ loading: true, error: '', data: null });
 
@@ -3633,7 +3471,6 @@ function AddressPage() {
           chronik.address(decodedAddress).history(0, 25),
           chronik.address(decodedAddress).utxos(),
         ]);
-        const txs = history?.txs || [];
         const utxoList = utxos?.utxos || [];
         const tokenIds = Array.from(new Set(
           utxoList
@@ -3662,10 +3499,10 @@ function AddressPage() {
     return () => { mounted = false; };
   }, [decodedAddress]);
 
-  const utxos = state.data?.utxos?.utxos || [];
-  const txs = state.data?.history?.txs || [];
+  const utxos = React.useMemo(() => state.data?.utxos?.utxos || [], [state.data]);
+  const txs = React.useMemo(() => state.data?.history?.txs || [], [state.data]);
   const totalSats = utxos.reduce((acc, u) => acc + Number(u.sats || 0), 0);
-  const tokenInfoById = state.data?.tokenInfoById || {};
+  const tokenInfoById = React.useMemo(() => state.data?.tokenInfoById || {}, [state.data]);
   const tokenBalances = React.useMemo(() => {
     const balances = new Map();
     for (const utxo of utxos) {
@@ -3824,6 +3661,7 @@ function FamilyTreeNodeCard({ node, label = '', prominent = false }) {
               src={node.image}
               alt={title}
               loading="lazy"
+            decoding="async"
               onError={() => setImageFailed(true)}
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
@@ -4010,6 +3848,7 @@ function TokenFamilyTreeSection({ tokenId, token, localMeta, ipfsMeta }) {
 
 function FamilyTreePage() {
   const { tokenId } = useParams();
+  useDocumentTitle('Árbol de linaje');
   const [state, setState] = React.useState({ loading: true, error: '', data: null });
 
   React.useEffect(() => {
@@ -4065,6 +3904,7 @@ function FamilyTreePage() {
 
 function TokenPage() {
   const { tokenId } = useParams();
+  useDocumentTitle(tokenId ? `Token ${shortHex(tokenId, 12, 8)}` : 'Token');
   const [state, setState] = React.useState({ loading: true, error: '', data: null });
   const [integrityState, setIntegrityState] = React.useState({
     loading: false,
@@ -4426,6 +4266,8 @@ function TokenPage() {
                 <img
                   src={resolvedImage.url}
                   alt={resolvedName.value !== '—' ? resolvedName.value : `NFT ${shortHex(tokenId, 12, 8)}`}
+                  loading="lazy"
+                  decoding="async"
                   style={{ width: '100%', maxWidth: '440px', border: '1px solid #1c515b', borderRadius: '12px', objectFit: 'cover', display: 'block' }}
                   onError={() => setImageFailed(true)}
                 />
@@ -4520,6 +4362,7 @@ function TokenPage() {
 function SearchHashPage() {
   const { hash } = useParams();
   const navigate = useNavigate();
+  useDocumentTitle('Resolver hash');
   const [state, setState] = React.useState({ loading: true, error: '' });
 
   React.useEffect(() => {
@@ -4532,13 +4375,17 @@ function SearchHashPage() {
           await chronik.tx(hash);
           if (mounted) navigate(`/tx/${hash}`, { replace: true });
           return;
-        } catch {}
+        } catch {
+          // Continue resolving the same hash as a block or token.
+        }
 
         try {
           await chronik.block(hash);
           if (mounted) navigate(`/block/${hash}`, { replace: true });
           return;
-        } catch {}
+        } catch {
+          // Continue resolving the same hash as a block or token.
+        }
 
         await chronik.token(hash);
         if (mounted) navigate(`/token/${hash}`, { replace: true });
@@ -4560,10 +4407,17 @@ function SearchHashPage() {
 }
 
 function NotFoundPage() {
+  useDocumentTitle('Ruta no encontrada');
   return (
     <Shell>
       <SearchBar />
-      <ErrorBox error="Ruta no encontrada." />
+      <PageStatus type="error" title="Ruta no encontrada">
+        No encontramos esa ruta. Puedes volver al inicio, abrir el explorer o usar la búsqueda para recuperar el camino.
+      </PageStatus>
+      <div style={{ marginTop: '14px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+        <Link to="/" style={{ color: '#7dffe4' }}>Ir a Inicio</Link>
+        <Link to="/explorer" style={{ color: '#7dffe4' }}>Abrir Explorer</Link>
+      </div>
     </Shell>
   );
 }
@@ -4572,7 +4426,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={(
+          <React.Suspense fallback={<PageSkeleton text="Cargando inicio..." />}>
+            <LazyHomePage chronikUrl={CHRONIK_URL} detectQueryType={detectQueryType} />
+          </React.Suspense>
+        )} />
         <Route path="/explorer" element={<ExplorerPage />} />
         <Route path="/linaje" element={<LinajePage />} />
         <Route path="/linaje/:txidOrSlug" element={<LinajeRecordPage />} />
