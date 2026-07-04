@@ -548,6 +548,82 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     accent: '#6f6a66',
     nota: 'Hija de Aztlan Ramirez y Copal Ramirez. Nodo de nueva generacion dentro del archivo del linaje vivo.'
   },
+  'mixa-ramirez': {
+    slug: 'mixa-ramirez',
+    txid: 'ae69f7111c9b733f9788d787b7e974ce9b053527ea4cbab8603ba2e9be3d2eda',
+    tokenId: 'ae69f7111c9b733f9788d787b7e974ce9b053527ea4cbab8603ba2e9be3d2eda',
+    title: 'Mixa Ramirez',
+    nombreCompleto: 'Mixa (Ramirez/Ramirez) Mex.',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Mariposa',
+    variedad: 'Sin pelo',
+    talla: 'Intermedia',
+    etapa: 'Recién nacido',
+    fechaNacimiento: '2026-04-20',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramírez',
+    padre: 'Draft_Token_BOLERO_RAMIREZ_FCMZZ1560-A', // Bolero Ramirez
+    madre: 'gema_ramirez_placeholder_id', // Gema Ramirez
+    padreNombre: 'HUAPANGO (RAMIREZ/RAMIREZ) MEX.FCI.',
+    madreNombre: 'CITLALI (RAMIREZ/RAMIREZ) MEX.',
+    documentosOnChain: [
+      {
+        tipo: 'nacimiento',
+        titulo: 'NFT de nacimiento de Mixa Ramírez',
+        txid: 'ae69f7111c9b733f9788d787b7e974ce9b053527ea4cbab8603ba2e9be3d2eda',
+        red: 'eCash',
+        sistema: 'Tonalli Wallet',
+        estado: 'verificado'
+      },
+      {
+        tipo: 'expediente-fcm-sanitario',
+        titulo: 'Registro FCM, pedigree y expediente sanitario de Mixa Ramírez',
+        txid: 'c3b14df7f7a31314cabc60db4093707c6ef168a5727f6b4d2ca935d1b25f9f31',
+        explorerUrl: 'https://explorer.xolosarmy.xyz/search/c3b14df7f7a31314cabc60db4093707c6ef168a5727f6b4d2ca935d1b25f9f31',
+        red: 'eCash',
+        sistema: 'Tonalli Wallet',
+        fechaRegistro: '2026-07-04',
+        estado: 'verificado',
+        incluye: [
+          'registro-fcm',
+          'certificado-internacional-pedigree',
+          'microchip',
+          'vacunacion',
+          'desparasitacion',
+          'genealogia'
+        ]
+      }
+    ],
+    registroDocumental: {
+      estado: 'verificado',
+      institucion: 'Federación Canófila Mexicana',
+      incluyePedigreeInternacional: true,
+      incluyeMicrochip: true,
+      incluyeVacunacion: true,
+      incluyeDesparasitacion: true,
+      txid: 'c3b14df7f7a31314cabc60db4093707c6ef168a5727f6b4d2ca935d1b25f9f31'
+    },
+    theme: 'genesis-line',
+    accent: '#6f6a66',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'mixa',
+      'recien-nacido',
+      'sin-pelo',
+      'hembra',
+      'mariposa',
+      'fcm',
+      'pedigree-internacional',
+      'vacunacion',
+      'desparasitacion',
+      'expediente-documental',
+      'on-chain'
+    ],
+    nota: 'Mixa Ramírez cuenta con NFT de nacimiento y con un segundo NFT documental que preserva su registro FCM, Certificado Internacional de Pedigree, microchip, vacunación, desparasitación y genealogía. El expediente documental fue minteado en Tonalli Wallet con TXID c3b14df7f7a31314cabc60db4093707c6ef168a5727f6b4d2ca935d1b25f9f31.'
+  },
   'luna-ramirez': {
     slug: 'luna-ramirez',
     txid: '094639e668c24620ec9f2107f68b55eb4766c3fee41261fc624117d4fa805fd4',
