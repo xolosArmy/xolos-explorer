@@ -3,6 +3,89 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+  'nox-ramirez': {
+    slug: 'nox-ramirez',
+    txid: '46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
+    tokenId: '46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
+
+    title: 'Nox Ramírez',
+    subtitle: 'Registro de Linaje - Pedigree FCM/FCI',
+
+    narrative: 'Nox Ramírez es un xoloitzcuintle macho intermedio, color negro, nacido el 12 de febrero de 2026 en Ciudad de México. Su registro documental integra su microchip, certificado internacional de pedigree FCM/FCI y genealogía dentro del Archivo del Linaje Vivo de Xolos Ramírez mediante Tonalli Wallet.',
+
+    nombreCompleto: 'NOX (RAMÍREZ/RAMÍREZ) MEX.FCI.',
+    afijo: 'Ramírez',
+
+    etapa: 'cachorro',
+    origen: 'pedigree-fcm',
+
+    sexo: 'Macho',
+    color: 'negro',
+    variedad: 'sin-pelo',
+    talla: 'intermedia',
+
+    displayColor: 'Negro',
+    displayVariedad: 'Sin Pelo',
+
+    fechaNacimiento: '2026-02-12',
+    lugarNacimiento: 'Ciudad de México, México',
+
+    criador: 'Xolos Ramírez',
+
+    microchip: '939000002766011',
+    registroFCM: 'FCMYV0889-A',
+    fechaExpedicionPedigree: '2026-08-12',
+
+    padreNombre: 'HUAPANGO (RAMÍREZ/RAMÍREZ) MEX.FCI.',
+    madreNombre: 'TULA (RAMÍREZ/RAMÍREZ) MEX.',
+
+    padre: 'huapango-ramirez',
+    madre: 'tula-ramirez',
+
+    explorerUrl: 'https://explorer.xolosarmy.xyz/tx/46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
+
+    documentosOnChain: [
+      {
+        tipo: 'linaje-fcm-pedigree',
+        titulo: 'NFT de linaje y pedigree FCM/FCI de Nox Ramírez',
+        txid: '46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
+        explorerUrl: 'https://explorer.xolosarmy.xyz/tx/46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
+        red: 'eCash',
+        sistema: 'Tonalli Wallet',
+        estado: 'verificado',
+        incluye: [
+          'registro-fcm',
+          'certificado-internacional-pedigree',
+          'microchip',
+          'genealogia',
+          'identidad'
+        ]
+      }
+    ],
+
+    theme: 'codex',
+    accent: '#111111',
+
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'nox',
+      'macho',
+      'intermedia',
+      'sin-pelo',
+      'negro',
+      'microchip',
+      'fcm',
+      'pedigree-internacional',
+      'huapango',
+      'tula',
+      'on-chain',
+      'tonalli-wallet'
+    ],
+
+    nota: 'NFT de linaje minteado exitosamente vía Tonalli Wallet. Registro basado en Certificado Internacional de Pedigree FCM/FCI. Microchip 939000002766011. Registro FCM FCMYV0889-A. Padre: Huapango Ramírez. Madre: Tula Ramírez.'
+  },
   'tika-ramirez': {
     slug: 'tika-ramirez',
     title: 'Tika Ramírez',
