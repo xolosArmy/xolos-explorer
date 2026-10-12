@@ -16,11 +16,8 @@ import {
   pickNftImageUrl,
   sha256HexFromString,
 } from './utils/ipfsMetadata';
-const CHRONIK_URLS = [
-  'https://chronik.e.cash',
-  'https://chronik.xolosarmy.xyz'
-];
-const chronik = new ChronikClient(CHRONIK_URLS);
+const CHRONIK_URL = 'https://chronik.e.cash';
+const chronik = new ChronikClient(CHRONIK_URL);
 const RMZ_TOKEN_ID = (import.meta.env.VITE_RMZ_TOKEN_ID || '').trim().toLowerCase();
 const tokenIpfsMetadataByIdCache = new Map();
 const tokenIpfsMetadataPromiseById = new Map();
