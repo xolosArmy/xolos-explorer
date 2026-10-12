@@ -25,7 +25,7 @@ export const LINAJE_SLUG_INDEX = Object.freeze({
   'luna-ramirez': '094639e668c24620ec9f2107f68b55eb4766c3fee41261fc624117d4fa805fd4',
   'onix-ramirez': 'efec4f67bad956de425122d0496071842832433d349209f6f201898dc737477b',
   'puka-ramirez': '26fb361599ec6ce20b9259f6ec59433bbed50a83dedef706bcef7a5323fe1694',
-  'nox-ramirez': '46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa'
+  'nox-ramirez': '46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
   'tonalli-ramirez': '084ff1d5dde0cdfe3f6d61978dc39e7a21ebb9a25cb21e8e44616315f7d9b199'
 });
 
