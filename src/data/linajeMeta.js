@@ -82,7 +82,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     lugarNacimiento: 'Ciudad de México, México',
     criador: 'Xolos Ramírez',
     padre: 'PITAGORAS_RAMIREZ', // Yaqui Ramirez
-    madre: '<a href="https://explorer.xolosarmy.xyz/linaje/reyna-ramirez</a>',// Carmin Ramirez
+    madre: '<a href="/linaje/reyna-ramirez">Reyna Ramirez</a>',// Reyna Ramirez
     microchip: '900255002683022',    
     theme: 'genesis-line',
     accent: '#1e1e1e',
