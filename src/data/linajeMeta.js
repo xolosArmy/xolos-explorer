@@ -65,7 +65,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
       'negro',
       'on-chain'
     ],
-    nota: 'Iztli Ramírez, también conocido históricamente como Oce, es un Xoloitzcuintle macho negro, nacido el 14 de julio de 2026 dentro del programa de crianza de Xolos Ramírez.'
+    nota: 'Iztli Ramírez, también conocido históricamente como Oce, es un Xoloitzcuintle macho negro, nacido el 16 de julio de 2026 dentro del programa de crianza de Xolos Ramírez.'
   },
   'nox-ramirez': {
     slug: 'nox-ramirez',
