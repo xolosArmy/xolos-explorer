@@ -3,6 +3,38 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+     'reyna-ramirez': {
+    slug: 'reyna-ramirez',
+    txid: '2de34e3d7c8eb32a0493c9711f7fc888c327e355c8932794ec7a2f9fc0fcf707',
+    tokenId: '2de34e3d7c8eb32a0493c9711f7fc888c327e355c8932794ec7a2f9fc0fcf707',
+    title: 'Reyna Ramirez',
+    nombreCompleto: 'Reyna Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Con pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2021-09-17',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramírez',
+    padre: 'ITZIA_RAMIREZ', // Itzia Ramirez
+    madre: 'VOVID_RAMIREZ', // Vovid Ramirez
+    microchip: '939000002638996',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'reyna',
+      'adulto',
+      'con-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Registro on-chain de Reyna Ramirez dentro del Archivo del Linaje Vivo."'
+  },
     'tonalli-ramirez': {
     slug: 'tonalli-ramirez',
     txid: '084ff1d5dde0cdfe3f6d61978dc39e7a21ebb9a25cb21e8e44616315f7d9b199',
