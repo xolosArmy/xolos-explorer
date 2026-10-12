@@ -25,7 +25,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
       'xoloitzcuintle',
       'linaje',
       'ramirez',
-      'luna',
+      'tonalli',
       'joven',
       'sin-pelo',
       'hembra',
