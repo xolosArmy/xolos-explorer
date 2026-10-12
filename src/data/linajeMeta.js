@@ -19,6 +19,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     criador: 'Xolos Ramírez',
     padre: 'YAQUI_RAMIREZ', // Yaqui Ramirez
     madre: 'CARMIN_RAMIREZ', // Carmin Ramirez
+    microchip: '900255002789437',    
     theme: 'genesis-line',
     accent: '#1e1e1e',
     tags: [
