@@ -35,6 +35,38 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     ],
     nota: 'Este NFT de Linaje funciona como una capa verificable de trazabilidad, vinculado a su microchip ISO 900255002789437. Guardián: Allan Emmanuel Aguilar. Xolos Ramírez - Archivo del Linaje Vivo..'
   },
+    'iztli-ramirez': {
+    slug: 'iztli-ramirez',
+    txid: '6a14c61eee376cb86ec310bc0a9bf68ed501439ac3ab0378c1a9885e559165ed',
+    tokenId: '6a14c61eee376cb86ec310bc0a9bf68ed501439ac3ab0378c1a9885e559165ed',
+    title: 'Iztli Ramirez',
+    nombreCompleto: 'Izlti Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Joven',
+    fechaNacimiento: '2026-07-16',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramírez',
+    padre: 'PITAGORAS_RAMIREZ', // Yaqui Ramirez
+    madre: 'REYNA_RAMIREZ', // Carmin Ramirez
+    microchip: '900255002683022',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'iztli',
+      'joven',
+      'sin-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: 'Iztli Ramírez, también conocido históricamente como Oce, es un Xoloitzcuintle macho negro, nacido el 14 de julio de 2026 dentro del programa de crianza de Xolos Ramírez.'
+  },
   'nox-ramirez': {
     slug: 'nox-ramirez',
     txid: '46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
