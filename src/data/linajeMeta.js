@@ -17,8 +17,8 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     fechaNacimiento: '2026-07-06',
     lugarNacimiento: 'Ciudad de México, México',
     criador: 'Xolos Ramírez',
-    padre: 'Draft_Token_YAQUI_RAMIREZ', // Yaqui Ramirez
-    madre: 'Draft_Token_CARMIN_RAMIREZ', // Carmin Ramirez
+    padre: 'YAQUI_RAMIREZ', // Yaqui Ramirez
+    madre: 'CARMIN_RAMIREZ', // Carmin Ramirez
     theme: 'genesis-line',
     accent: '#1e1e1e',
     tags: [
