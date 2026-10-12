@@ -3,6 +3,37 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+    'tonalli-ramirez': {
+    slug: 'tonalli-ramirez',
+    txid: '084ff1d5dde0cdfe3f6d61978dc39e7a21ebb9a25cb21e8e44616315f7d9b199',
+    tokenId: '084ff1d5dde0cdfe3f6d61978dc39e7a21ebb9a25cb21e8e44616315f7d9b199',
+    title: 'Tonalli Ramirez',
+    nombreCompleto: 'Tonalli Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Joven',
+    fechaNacimiento: '2026-07-06',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramírez',
+    padre: 'Draft_Token_YAQUI_RAMIREZ', // Yaqui Ramirez
+    madre: 'Draft_Token_CARMIN_RAMIREZ', // Carmin Ramirez
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'luna',
+      'joven',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: 'Este NFT de Linaje funciona como una capa verificable de trazabilidad, vinculado a su microchip ISO 900255002789437. Guardián: Allan Emmanuel Aguilar. Xolos Ramírez - Archivo del Linaje Vivo..'
+  },
   'nox-ramirez': {
     slug: 'nox-ramirez',
     txid: '46a96ccf2e5ca44bc9fc02e0b3b01fe405016715707c488bcfbb82b80a1680fa',
