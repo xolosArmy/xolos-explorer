@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+       'vovid-ramirez': {
+    slug: 'vovid-ramirez',
+    txid: '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
+    tokenId: '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
+    title: 'Vovid Ramirez',
+    nombreCompleto: 'Vovid Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2020-03-15',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Criadero Caliente',
+    padre: 'UN PAPALOTE CALIENTE MEX', // Un Papalote Caliente
+    madre: 'PATY CALIENTE MEX FCI', // Paty Caliente
+    registroFCM: 'FCMC7163-F',        
+    microchip: '93900000264496',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'vovid',
+      'adulto',
+      'sin-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Como dato curioso, inicialmente el nombre de Vovid iba a ser Covid dado que en ese momento dicha narrativa estaba en tendencia en todo el mundo."'
+  },
       'romeo-ramirez': {
     slug: 'romeo-ramirez',
     txid: '4b9680a440279a54211305b142105142c7e57fc9fc586e666a679a903dac1107',
