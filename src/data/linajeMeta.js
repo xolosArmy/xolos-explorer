@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+      'balamka-ramirez': {
+    slug: 'balamka-ramirez',
+    txid: '0153b3cdc6bb45fb5fc9fa0162914f9a0edb14ea565607993336b46d5d4bc6b3',
+    tokenId: '0153b3cdc6bb45fb5fc9fa0162914f9a0edb14ea565607993336b46d5d4bc6b3',
+    title: 'Balamka Ramirez',
+    nombreCompleto: 'Balamka Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2025-05-01',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'IKAL CALIENTE', // Ikal Caliente
+    madre: 'VENUS RAMIREZ', // Venus Ramirez
+    registroFCM: 'FCMD7273-B',                
+    microchip: '939000002739749',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'balamka',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '		"Registro on-chain verificado de Balamka (Ramirez) Mex. dentro del Archivo del Linaje Vivo."'
+  },
      'venus-ramirez': {
     slug: 'venus-ramirez',
     txid: '0d4926f2c94567a1e97c435229439e885e36672bbb31b26b5be3dd9160a7c4b7',
@@ -34,7 +67,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
       'negro',
       'on-chain'
     ],
-    nota: '		"Registro on-chain verificado de Itzia (Ramirez) Mex. dentro del Archivo del Linaje Vivo."'
+    nota: '		"Registro on-chain verificado de Venus (Ramirez) Mex. dentro del Archivo del Linaje Vivo."'
   },
      'bronce-ramirez': {
     slug: 'bronce-ramirez',
