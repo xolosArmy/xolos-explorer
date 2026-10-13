@@ -35,7 +35,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     ],
     nota: '	"Como dato curioso, inicialmente el nombre de Vovid iba a ser Covid dado que en ese momento dicha narrativa estaba en tendencia en todo el mundo."'
   },
-       'vovid-ramirez': {
+       'vovid-caliente': {
     slug: 'vovid-caliente',
     txid: '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
     tokenId: '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
