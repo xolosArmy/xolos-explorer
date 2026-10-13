@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+     'bronce-ramirez': {
+    slug: 'bronce-ramirez',
+    txid: '28a5c3ad2f792e6ed747512f2170590690c5c02e0a67dc59fbbad0222400e4c8',
+    tokenId: '28a5c3ad2f792e6ed747512f2170590690c5c02e0a67dc59fbbad0222400e4c8',
+    title: 'Bronce Ramirez',
+    nombreCompleto: 'Bronce Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Bronce',
+    variedad: 'Con pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2020-04-20',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'TICUIZ LANGARICA', // Ticuiz Langarica
+    madre: 'RIMA LANGARICA', // Rima Langarica
+    registroFCM: 'FCMZ2131-A',                
+    microchip: '93900002726782',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'bronce',
+      'adulto',
+      'con-pelo',
+      'macho',
+      'bronce',
+      'on-chain'
+    ],
+    nota: '		"Registro on-chain verificado de Itzia (Ramirez) Mex. dentro del Archivo del Linaje Vivo."'
+  },
     'itzia-ramirez': {
     slug: 'itzia-ramirez',
     txid: 'fedaff48232023ab2e06230a389895e2648a1bdc5158a7e3091f9bbff6df5088',
