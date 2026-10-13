@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+           'altar-alvarado': {
+    slug: 'altar-alvarado',
+    txid: '83e5e796338d8caf7dc57db01e530b3222cb0cb73641a448e6a896e05f6974b7',
+    tokenId: '83e5e796338d8caf7dc57db01e530b3222cb0cb73641a448e6a896e05f6974b7',
+    title: 'Altar Alvarado',
+    nombreCompleto: 'Altar Alvarado',
+    afijo: 'Alvarado',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2020-04-27',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Jorge Alvarado',
+    padre: 'VOVID CALIENTE', // Vovid Caliente
+    madre: 'ALTAR ALVARADO', // Altar Alvarado  
+    registroFCM: 'FCMC1229',                
+    microchip: '939000002583849',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'alvarado',
+      'altar',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Registro on-chain de Altar (Alvarado) Mex. dentro del Archivo del Linaje Vivo."'
+  },
           'durango-ramirez': {
     slug: 'durango-ramirez',
     txid: '02c571ffefef3a28ad07d3afe20e07ba059f78c9f4807f27e5cc12dc4654af41',
