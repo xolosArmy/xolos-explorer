@@ -19,6 +19,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     criador: 'Xolos Ramírez',
     padre: 'VOVID CALIENTE', // Vovid Ramirez
     madre: 'VIDA RAMIREZ', // Vida Ramirez
+    registroFCM: 'FCMC7163-F',        
     microchip: '939000002703373',    
     theme: 'genesis-line',
     accent: '#1e1e1e',
