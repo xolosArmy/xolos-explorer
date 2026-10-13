@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+          'tabasqueña-alatorre': {
+    slug: 'tabasqueña-alatorre',
+    txid: '4df6ec8a9c51578d79b8b43886cec0930520a0179748f055da52cad0fdd75434',
+    tokenId: '4df6ec8a9c51578d79b8b43886cec0930520a0179748f055da52cad0fdd75434',
+    title: 'Tabasqueña Alatorre',
+    nombreCompleto: 'Tabasqueña Alatorre',
+    afijo: 'Alatorre',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2021-09-30',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez',
+    padre: 'JADE RETANA MEX FCI', // Yaqui Ramirez
+    madre: 'ZACAHUIL ALATORRE ALVAREZ MEX FCI', // Yeyetzi Ramirez
+    registroFCM: 'FCMC8484-D',              
+    microchip: '939000002637277',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'alatorre',
+      'tabasqueña',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Registro on-chain verificado de Tabasqueña (Alatorre) Mex. FCI. Hembra Estándar Negro."'
+  },
         'ehecatl-ramirez': {
     slug: 'ehecatl-ramirez',
     txid: '2ab5d1890eec894ed87b00f02721ce57dc36f681e96f9125a84a7e3936e25c4e',
@@ -41,7 +74,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     tokenId: '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
     title: 'Vovid Caliente',
     nombreCompleto: 'Vovid Caliente',
-    afijo: 'Ramirez',
+    afijo: 'Caliente',
     sexo: 'Macho',
     color: 'Negro',
     variedad: 'Sin pelo',
