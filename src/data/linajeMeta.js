@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+    'itzia-ramirez': {
+    slug: 'itzia-ramirez',
+    txid: 'fedaff48232023ab2e06230a389895e2648a1bdc5158a7e3091f9bbff6df5088',
+    tokenId: 'fedaff48232023ab2e06230a389895e2648a1bdc5158a7e3091f9bbff6df5088',
+    title: 'Itzia Ramirez',
+    nombreCompleto: 'Itzia Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2020-04-20',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'IKAL CALIENTE', // Ikal Caliente
+    madre: 'CALIMAYA ALVARADO', // Calimaya Alvarado
+    registroFCM: 'FCMD1611',                
+    microchip: '939000002569257',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'itzia',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '		"Registro on-chain verificado de Itzia (Ramirez) Mex. dentro del Archivo del Linaje Vivo."'
+  },
   'cereza-ramirez': {
     slug: 'cereza-ramirez',
     txid: '30c912d7bc57e6c950eb4786e1d1dbc947ba5a8705d85d5e330c38e65b9a7ddf',
