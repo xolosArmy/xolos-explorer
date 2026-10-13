@@ -3,12 +3,44 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+        'ehecatl-ramirez': {
+    slug: 'ehecatl-ramirez',
+    txid: '2ab5d1890eec894ed87b00f02721ce57dc36f681e96f9125a84a7e3936e25c4e',
+    tokenId: '2ab5d1890eec894ed87b00f02721ce57dc36f681e96f9125a84a7e3936e25c4e',
+    title: 'Ehecatl Ramirez',
+    nombreCompleto: 'Ehecatl Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Bermejo',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2025-07-15',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez',
+    padre: 'YAQUI RAMIREZ', // Yaqui Ramirez
+    madre: 'YEYETZI RAMIREZ', // Yeyetzi Ramirez       
+    microchip: '900255002683033',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'ehecatl',
+      'adulto',
+      'sin-pelo',
+      'macho',
+      'bermejo',
+      'on-chain'
+    ],
+    nota: '	"Como dato curioso, inicialmente el nombre de Vovid iba a ser Covid dado que en ese momento dicha narrativa estaba en tendencia en todo el mundo."'
+  },
        'vovid-ramirez': {
-    slug: 'vovid-ramirez',
+    slug: 'vovid-caliente',
     txid: '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
     tokenId: '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
-    title: 'Vovid Ramirez',
-    nombreCompleto: 'Vovid Ramirez',
+    title: 'Vovid Caliente',
+    nombreCompleto: 'Vovid Caliente',
     afijo: 'Ramirez',
     sexo: 'Macho',
     color: 'Negro',
@@ -26,7 +58,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     tags: [
       'xoloitzcuintle',
       'linaje',
-      'ramirez',
+      'caliente',
       'vovid',
       'adulto',
       'sin-pelo',
