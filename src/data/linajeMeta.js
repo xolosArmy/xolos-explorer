@@ -3,6 +3,38 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+      'romeo-ramirez': {
+    slug: 'romeo-ramirez',
+    txid: '4b9680a440279a54211305b142105142c7e57fc9fc586e666a679a903dac1107',
+    tokenId: '4b9680a440279a54211305b142105142c7e57fc9fc586e666a679a903dac1107',
+    title: 'Romeo Ramirez',
+    nombreCompleto: 'Romeo Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2023-03-07',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramírez',
+    padre: 'VOVID CALIENTE', // Vovid Ramirez
+    madre: 'VIDA RAMIREZ', // Vida Ramirez
+    microchip: '939000002703373',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'romeo',
+      'adulto',
+      'sin-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Registro on-chain de Romeo Ramirez dentro del Archivo del Linaje Vivo."'
+  },
      'agata-ramirez': {
     slug: 'agata-ramirez',
     txid: 'f4f26fa9099a02067c0977bff52c2030635619382b08dbb4e304c5f64d57c0be',
