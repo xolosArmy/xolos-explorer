@@ -31,7 +31,8 @@ export const LINAJE_SLUG_INDEX = Object.freeze({
   'reyna-ramirez': '2de34e3d7c8eb32a0493c9711f7fc888c327e355c8932794ec7a2f9fc0fcf707',
   'agata-ramirez': 'f4f26fa9099a02067c0977bff52c2030635619382b08dbb4e304c5f64d57c0be',
   'romeo-ramirez': '4b9680a440279a54211305b142105142c7e57fc9fc586e666a679a903dac1107',
-  'vovid-ramirez': '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70'
+  'vovid-ramirez': '40a8d3b6cf35dc3d8db8e0d70f57f45ae158659de9364d5c591b55dfe555ba70',
+  'ehecatl-ramirez': '2ab5d1890eec894ed87b00f02721ce57dc36f681e96f9125a84a7e3936e25c4e'
 });
 
 function normalizeSlugKey(slug) {
