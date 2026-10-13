@@ -50,8 +50,8 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     fechaNacimiento: '2021-11-27',
     lugarNacimiento: 'Ciudad de México, México',
     criador: 'Xolos Ramirez',
-    padre: 'VOVID CALIENTE', // Vovid Caliente
-    madre: 'ALTAR ALVARADO', // Altar Alvarado  
+    padre: 'Registro Inicial', // Vovid Caliente
+    madre: 'Registro Inicial', // Altar Alvarado  
     registroFCM: 'FCMB9150-B',                
     microchip: '939000002652286',    
     theme: 'genesis-line',
