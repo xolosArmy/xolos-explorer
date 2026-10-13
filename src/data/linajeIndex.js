@@ -37,7 +37,8 @@ export const LINAJE_SLUG_INDEX = Object.freeze({
   'durango-ramirez': '02c571ffefef3a28ad07d3afe20e07ba059f78c9f4807f27e5cc12dc4654af41',
   'altar-alvarado': '83e5e796338d8caf7dc57db01e530b3222cb0cb73641a448e6a896e05f6974b7',
   'anahuac-ramirez': 'e46491551765133ad49efd1b71f5b47e9ca65fecd90a55c02dfb22da726ee558',
-  'cereza-ramirez': '30c912d7bc57e6c950eb4786e1d1dbc947ba5a8705d85d5e330c38e65b9a7ddf'
+  'cereza-ramirez': '30c912d7bc57e6c950eb4786e1d1dbc947ba5a8705d85d5e330c38e65b9a7ddf',
+  'itzia-ramirez': 'fedaff48232023ab2e06230a389895e2648a1bdc5158a7e3091f9bbff6df5088'
 });
 
 function normalizeSlugKey(slug) {
