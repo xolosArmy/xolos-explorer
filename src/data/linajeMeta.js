@@ -3,6 +3,38 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+     'agata-ramirez': {
+    slug: 'agata-ramirez',
+    txid: 'f4f26fa9099a02067c0977bff52c2030635619382b08dbb4e304c5f64d57c0be',
+    tokenId: 'f4f26fa9099a02067c0977bff52c2030635619382b08dbb4e304c5f64d57c0be',
+    title: 'Agata Ramirez',
+    nombreCompleto: 'Agata Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2021-11-22',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramírez',
+    padre: 'ARUMA RAMIREZ', // Itzia Ramirez
+    madre: 'LUPILLA ALVAREZ', // Vovid Ramirez
+    microchip: '939000002652334',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'agata',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Registro on-chain de Agata Ramirez dentro del Archivo del Linaje Vivo."'
+  },
      'reyna-ramirez': {
     slug: 'reyna-ramirez',
     txid: '2de34e3d7c8eb32a0493c9711f7fc888c327e355c8932794ec7a2f9fc0fcf707',
@@ -82,7 +114,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     lugarNacimiento: 'Ciudad de México, México',
     criador: 'Xolos Ramírez',
     padre: 'PITAGORAS RAMIREZ', // Pitagoras Ramirez
-    madre: 'REYNA RAMIREZ',// Reyna Ramirez
+    madre: '2de34e3d7c8eb32a0493c9711f7fc888c327e355c8932794ec7a2f9fc0fcf707',// Reyna Ramirez
     microchip: '900255002683022',    
     theme: 'genesis-line',
     accent: '#1e1e1e',
