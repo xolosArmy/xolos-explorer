@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+  'cereza-ramirez': {
+    slug: 'cereza-ramirez',
+    txid: '30c912d7bc57e6c950eb4786e1d1dbc947ba5a8705d85d5e330c38e65b9a7ddf',
+    tokenId: '30c912d7bc57e6c950eb4786e1d1dbc947ba5a8705d85d5e330c38e65b9a7ddf',
+    title: 'Cereza Ramirez',
+    nombreCompleto: 'Cereza Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2022-04-25',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'FRIDA RAMIREZ', // Frida Ramirez
+    madre: 'VOVID CALIENTE', // Vovid Caliente 
+    registroFCM: 'FCMA2526-D',                
+    microchip: '939000002661390',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'cereza',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Registro on-chain de Cereza Ramirez dentro del Archivo del Linaje Vivo."'
+  },
               'anahuac-ramirez': {
     slug: 'anahuac-ramirez',
     txid: 'e46491551765133ad49efd1b71f5b47e9ca65fecd90a55c02dfb22da726ee558',
