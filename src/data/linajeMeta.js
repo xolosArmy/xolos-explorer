@@ -17,9 +17,9 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     fechaNacimiento: '2023-03-07',
     lugarNacimiento: 'Ciudad de México, México',
     criador: 'Xolos Ramírez',
-    padre: 'VOVID CALIENTE', // Vovid Ramirez
-    madre: 'VIDA RAMIREZ', // Vida Ramirez
-    registroFCM: 'FCMC7163-F',        
+    padre: 'IKAL CALIENTE', // Vovid Ramirez
+    madre: 'JADE RAMIREZ', // Vida Ramirez
+    registroFCM: 'FCMA6280-A',        
     microchip: '939000002703373',    
     theme: 'genesis-line',
     accent: '#1e1e1e',
