@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+              'anahuac-ramirez': {
+    slug: 'anahuac-ramirez',
+    txid: 'e46491551765133ad49efd1b71f5b47e9ca65fecd90a55c02dfb22da726ee558',
+    tokenId: 'e46491551765133ad49efd1b71f5b47e9ca65fecd90a55c02dfb22da726ee558',
+    title: 'Anahuac Ramirez',
+    nombreCompleto: 'Anahuac Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2024-09-23',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'UXMAL AVILA', // Uxmal Avila
+    madre: 'CEREZA RAMIREZ', // Cereza Ramirez 
+    registroFCM: 'FCMZZ2154-A',                
+    microchip: '939000002725377',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'anahuac',
+      'adulto',
+      'sin-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: '	"Registro on-chain de Anahuac Ramirez dentro del Archivo del Linaje Vivo de Xolos Ramirez."'
+  },
            'altar-alvarado': {
     slug: 'altar-alvarado',
     txid: '83e5e796338d8caf7dc57db01e530b3222cb0cb73641a448e6a896e05f6974b7',
