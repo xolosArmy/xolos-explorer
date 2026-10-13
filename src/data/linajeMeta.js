@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+     'venus-ramirez': {
+    slug: 'venus-ramirez',
+    txid: '0d4926f2c94567a1e97c435229439e885e36672bbb31b26b5be3dd9160a7c4b7',
+    tokenId: '0d4926f2c94567a1e97c435229439e885e36672bbb31b26b5be3dd9160a7c4b7',
+    title: 'Venus Ramirez',
+    nombreCompleto: 'Venus Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2021-09-17',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'VOVID CALIENTE', // Vovid Caliente
+    madre: 'ITZIA RAMIREZ', // Itzia Ramirez
+    registroFCM: 'FCMB7471-B',                
+    microchip: '939000002639028',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'venus',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '		"Registro on-chain verificado de Itzia (Ramirez) Mex. dentro del Archivo del Linaje Vivo."'
+  },
      'bronce-ramirez': {
     slug: 'bronce-ramirez',
     txid: '28a5c3ad2f792e6ed747512f2170590690c5c02e0a67dc59fbbad0222400e4c8',
