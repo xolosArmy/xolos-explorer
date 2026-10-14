@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+      'anubis-ramirez': {
+    slug: 'anubis-ramirez',
+    txid: '5bbf51e055b39ee1eaabcd828b4206b9b50fac69252af280c0b83f575c56b6a2',
+    tokenId: '5bbf51e055b39ee1eaabcd828b4206b9b50fac69252af280c0b83f575c56b6a2',
+    title: 'Anubis Ramirez',
+    nombreCompleto: 'Anubis Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Negro',
+    variedad: 'Con pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2021-04-24',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'VOVID CALIENTE', //  Vovid Caliente
+    madre: 'ALTAR RAMIREZ', // Altar Ramirez
+    registroFCM: 'FCMB3967-A',                
+    microchip: '939000002628979',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'anubis',
+      'adulto',
+      'con-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: '		"Registro on-chain de Anubis Ramirez dentro del Archivo del Linaje Vivo."'
+  },
       'ocelotl-ramirez': {
     slug: 'ocelotl-ramirez',
     txid: 'b1afe01140c3aa4cc3a653170c18b043ac07bc2867aee288b94fc253a85ab7d3',
