@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+       'teyolia-ramirez': {
+    slug: 'teyolia-ramirez',
+    txid: 'c95242fdea3a16ba21d3c876ecf11990c04ae4f1eb0d04d22801c8ff5a885c02',
+    tokenId: 'c95242fdea3a16ba21d3c876ecf11990c04ae4f1eb0d04d22801c8ff5a885c02',
+    title: 'Teyolia Ramirez',
+    nombreCompleto: 'Teyolia Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Joven',
+    fechaNacimiento: '2026-03-01',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'BRONCE RAMIREZ', //  Bronce Ramirez
+    madre: 'ITZIA RAMIREZ', // Itzia Ramirez
+    registroFCM: 'FCMZ74463-A',                
+    microchip: '939000002759321',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'teyolia',
+      'joven',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '		"Piedra Digital de Linaje del xoloitzcuintle Teyolia Ramírez. Registro de nacimiento dentro del Archivo del Linaje Vivo de Xolos Ramírez, preservado en la blockchain de eCash por xolosArmy Network."'
+  },
       'anubis-ramirez': {
     slug: 'anubis-ramirez',
     txid: '5bbf51e055b39ee1eaabcd828b4206b9b50fac69252af280c0b83f575c56b6a2',
