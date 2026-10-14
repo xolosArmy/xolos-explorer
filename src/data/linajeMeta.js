@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+      'ocelotl-ramirez': {
+    slug: 'ocelotl-ramirez',
+    txid: 'b1afe01140c3aa4cc3a653170c18b043ac07bc2867aee288b94fc253a85ab7d3',
+    tokenId: 'b1afe01140c3aa4cc3a653170c18b043ac07bc2867aee288b94fc253a85ab7d3',
+    title: 'Ocelotl Ramirez',
+    nombreCompleto: 'Ocelotl Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2023-08-12',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'ANUBIS RAMIREZ', //  Anubis Ramirez
+    madre: 'ITZI RAMIREZ', // Itzi Ramirez
+    registroFCM: 'FCMZZ0046-C',                
+    microchip: '939000002703960',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'ocelotl',
+      'adulto',
+      'sin-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: '		"Ocelotl Ramirez es mejor conocido en el Criadero Xolos Ramirez como bebé tecuhtli"'
+  },
       'balamka-ramirez': {
     slug: 'balamka-ramirez',
     txid: '0153b3cdc6bb45fb5fc9fa0162914f9a0edb14ea565607993336b46d5d4bc6b3',
