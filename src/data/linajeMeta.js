@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+        'venecia-ramirez': {
+    slug: 'venecia-ramirez',
+    txid: '1eeefaf68adb859dbbf588df2bc1bf4b41717ada776b6883231843dd1bd0eafa',
+    tokenId: '1eeefaf68adb859dbbf588df2bc1bf4b41717ada776b6883231843dd1bd0eafa',
+    title: 'Venecia Ramirez',
+    nombreCompleto: 'Venecia Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Bermejo',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2021-11-27',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'VOVID CALIENTE', //  Vovid Caliente
+    madre: 'ALTAR ALVARADO', // Altar Alvarado
+    registroFCM: 'FCMB9150-E',                
+    microchip: '939000002652339',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'venecia',
+      'joven',
+      'sin-pelo',
+      'hembra',
+      'bermejo',
+      'on-chain'
+    ],
+    nota: '			"Registro on-chain de Venecia Ramirez dentro del Archivo del Linaje Vivo."'
+  },
        'teyolia-ramirez': {
     slug: 'teyolia-ramirez',
     txid: 'c95242fdea3a16ba21d3c876ecf11990c04ae4f1eb0d04d22801c8ff5a885c02',
