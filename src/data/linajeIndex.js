@@ -45,7 +45,8 @@ export const LINAJE_SLUG_INDEX = Object.freeze({
    'ocelotl-ramirez': 'b1afe01140c3aa4cc3a653170c18b043ac07bc2867aee288b94fc253a85ab7d3',
    'anubis-ramirez': '5bbf51e055b39ee1eaabcd828b4206b9b50fac69252af280c0b83f575c56b6a2',
    'teyolia-ramirez': 'c95242fdea3a16ba21d3c876ecf11990c04ae4f1eb0d04d22801c8ff5a885c02',
-   'mixa-ramirez': '218006a83344dd21c849fe852f375ff2673f3184c1018b725889fe7413a0981e'
+   'mixa-ramirez': '218006a83344dd21c849fe852f375ff2673f3184c1018b725889fe7413a0981e',
+   'venecia-ramirez': '1eeefaf68adb859dbbf588df2bc1bf4b41717ada776b6883231843dd1bd0eafa'
    
 });
 
