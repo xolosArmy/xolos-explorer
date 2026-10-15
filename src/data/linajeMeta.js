@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+        'jade-ramirez': {
+    slug: 'jade-ramirez',
+    txid: '0004bd83727c79eb7ad2d3e232eb88b058dee238006cf4d3aeb5b317f630047e',
+    tokenId: '0004bd83727c79eb7ad2d3e232eb88b058dee238006cf4d3aeb5b317f630047e',
+    title: 'Jade Ramirez',
+    nombreCompleto: 'Jade Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Con pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2021-09-17',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'VOVID CALIENTE', //  Vovid Caliente
+    madre: 'ITZIA RAMIREZ', // Itzia Ramirez
+    registroFCM: 'FCMB7471-D',                
+    microchip: '939000002638939',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'jade',
+      'adulto',
+      'con-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '			"Registro on-chain de Jade Ramirez dentro del Archivo del Linaje Vivo."'
+  },
         'venecia-ramirez': {
     slug: 'venecia-ramirez',
     txid: '1eeefaf68adb859dbbf588df2bc1bf4b41717ada776b6883231843dd1bd0eafa',
