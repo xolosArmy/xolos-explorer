@@ -1255,8 +1255,8 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
   },
   'mixa-ramirez': {
     slug: 'mixa-ramirez',
-    txid: 'ae69f7111c9b733f9788d787b7e974ce9b053527ea4cbab8603ba2e9be3d2eda',
-    tokenId: 'ae69f7111c9b733f9788d787b7e974ce9b053527ea4cbab8603ba2e9be3d2eda',
+    txid: '218006a83344dd21c849fe852f375ff2673f3184c1018b725889fe7413a0981e',
+    tokenId: '218006a83344dd21c849fe852f375ff2673f3184c1018b725889fe7413a0981e',
     title: 'Mixa Ramirez',
     nombreCompleto: 'Mixa (Ramirez/Ramirez) Mex.',
     afijo: 'Ramirez',
