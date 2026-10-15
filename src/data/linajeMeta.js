@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+        'axia-ramirez': {
+    slug: 'axia-ramirez',
+    txid: '84c28813ce5ce06b90cf0a2339f3a46d1cd12582b6674b706e91bb0236fba68f',
+    tokenId: '84c28813ce5ce06b90cf0a2339f3a46d1cd12582b6674b706e91bb0236fba68f',
+    title: 'Axia Ramirez',
+    nombreCompleto: 'Axia Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2025-08-01',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'UXMAL AVILA', //  Uxmal Avila
+    madre: 'VIDA RAMIREZ', // Vida Ramirez
+    registroFCM: 'FCMD8550-B',                
+    microchip: '939000002745883',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'axia',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Axia Ramirez dentro del Archivo del Linaje Vivo."'
+  },
         'jade-ramirez': {
     slug: 'jade-ramirez',
     txid: '0004bd83727c79eb7ad2d3e232eb88b058dee238006cf4d3aeb5b317f630047e',
