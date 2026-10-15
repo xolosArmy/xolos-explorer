@@ -1267,9 +1267,11 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     etapa: 'Recién nacido',
     fechaNacimiento: '2026-04-20',
     lugarNacimiento: 'Ciudad de México, México',
+    microchip: '93900002759318',
+    registroFCM: 'FCMZZ4464-C',
     criador: 'Xolos Ramírez',
-    padre: 'Draft_Token_BOLERO_RAMIREZ_FCMZZ1560-A', // Bolero Ramirez
-    madre: 'gema_ramirez_placeholder_id', // Gema Ramirez
+    padre: 'BOLERO RAMIREZ', // Bolero Ramirez
+    madre: 'GEMA RAMIREZ', // Gema Ramirez
     padreNombre: 'HUAPANGO (RAMIREZ/RAMIREZ) MEX.FCI.',
     madreNombre: 'CITLALI (RAMIREZ/RAMIREZ) MEX.',
     documentosOnChain: [
