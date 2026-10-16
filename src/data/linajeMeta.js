@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+          'xiuh-ramirez': {
+    slug: 'xiuh-ramirez',
+    txid: 'e2384d8728fc958c459b4859619938ddda4b1dd0e4ca47aac0779a26496eb9db',
+    tokenId: 'e2384d8728fc958c459b4859619938ddda4b1dd0e4ca47aac0779a26496eb9db',
+    title: 'Xiuh Ramirez',
+    nombreCompleto: 'Xiuh Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2025-01-29',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'UXMAL AVILA', //  Uxmal Avila
+    madre: 'SABINA RAMIREZ', // Sabina Ramirez 
+    registroFCM: 'FCMZZ2724-C',                  
+    microchip: '93900002730274',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'xiuh',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Xiuh Ramirez dentro del Archivo del Linaje Vivo."'
+  },
          'yohualli-ramirez': {
     slug: 'yohualli-ramirez',
     txid: '2cd356ecf042c3182352b3f240895090e1d716cb5d08f4ee4da8a178365a3ed1',
