@@ -3,6 +3,38 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+         'yohualli-ramirez': {
+    slug: 'yohualli-ramirez',
+    txid: '2cd356ecf042c3182352b3f240895090e1d716cb5d08f4ee4da8a178365a3ed1',
+    tokenId: '2cd356ecf042c3182352b3f240895090e1d716cb5d08f4ee4da8a178365a3ed1',
+    title: 'Yohualli Ramirez',
+    nombreCompleto: 'Yohualli Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Joven',
+    fechaNacimiento: '2026-07-04',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'AZTLAN RAMIREZ', //  Aztlan Ramirez
+    madre: 'XIUH RAMIREZ', // Xiuh Ramirez              
+    microchip: '900255002789433',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'yohualli',
+      'joven',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Yohualli Ramirez dentro del Archivo del Linaje Vivo."'
+  },
         'axia-ramirez': {
     slug: 'axia-ramirez',
     txid: '84c28813ce5ce06b90cf0a2339f3a46d1cd12582b6674b706e91bb0236fba68f',
