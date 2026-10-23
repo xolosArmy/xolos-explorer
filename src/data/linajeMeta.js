@@ -1465,6 +1465,19 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
           'desparasitacion',
           'genealogia'
         ]
+      },
+      {
+        tipo: 'community-nft',
+        titulo: 'Mixa Ramírez | xolosArmy Community NFT',
+        tokenId: '63e55a91fbfd4fec368e8a08ebd41971dda1a2873a91bb868df95743f68427f7',
+        txid: '63e55a91fbfd4fec368e8a08ebd41971dda1a2873a91bb868df95743f68427f7',
+        memoTxid: '7ad8c98f32a2a195611ce4ecaf1e79fe0094bb45effcec1404d1c389fd42bd1b',
+        transferenciaTxid: '22801b257eab50749f28c3fb55c367ca18e24e0fd0dca1e3b9419636a9396143',
+        destino: 'ecash:qzpn894u9937kurf9uydecsmw0r5zw048q39h7sn0w',
+        red: 'eCash',
+        sistema: 'Tonalli Wallet',
+        coleccion: 'xolosArmy Community',
+        estado: 'transferido'
       }
     ],
     registroDocumental: {
