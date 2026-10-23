@@ -4247,6 +4247,13 @@ function TokenPage() {
             />
           ) : null}
 
+          {localMeta?.idPerroServicio ? (
+            <>
+              <SectionTitle>Identificación de perro de servicio</SectionTitle>
+              <Box><strong>{localMeta.idPerroServicio}</strong></Box>
+            </>
+          ) : null}
+
           <SectionTitle>Metadatos IPFS</SectionTitle>
           <Box>
             {preferredSource === 'local' && (
