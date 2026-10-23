@@ -1433,6 +1433,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
     lugarNacimiento: 'Ciudad de México, México',
     microchip: '93900002759318',
     registroFCM: 'FCMZZ4464-C',
+    idPerroServicio: '1754824435',
     criador: 'Xolos Ramírez',
     padre: 'BOLERO RAMIREZ', // Bolero Ramirez
     madre: 'GEMA RAMIREZ', // Gema Ramirez
