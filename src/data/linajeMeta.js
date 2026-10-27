@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+           'papalotl-ramirez': {
+    slug: 'papalotl-ramirez',
+    txid: '999ecf726d29b2dc4866b226d9c5e550da40fe5a9949d550c4a381affe53b1e7',
+    tokenId: '999ecf726d29b2dc4866b226d9c5e550da40fe5a9949d550c4a381affe53b1e7',
+    title: 'Papalotl Ramirez',
+    nombreCompleto: 'Papalotl Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2023-11-01',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'VOVID CALIENTE', //  Vovid Caliente
+    madre: 'FRIDA RAMIREZ', // Frida Ramirez
+    registroFCM: 'FCMZZ0306-A',                  
+    microchip: '939000002708463',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'papalotl',
+      'adulto',
+      'sin-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Papalotl Ramirez dentro del Archivo del Linaje Vivo."'
+  },
            'mimosa-ramirez': {
     slug: 'mimosa-ramirez',
     txid: '2a40ed39f83a48a89aa79c464c43ceff1fb65239fff1210a7a79709d9548f0d5',
