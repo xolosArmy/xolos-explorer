@@ -34,7 +34,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
       'negro',
       'on-chain'
     ],
-    nota: '				"Registro on-chain de Aruma Ramirez dentro del Archivo del Linaje Vivo."'
+    nota: '				"Registro on-chain de Aruma Ramirez dentro del Archivo del Linaje Vivo. Primogénito de Ikal Caliente."'
   },
               'sabina-ramirez': {
     slug: 'sabina-ramirez',
