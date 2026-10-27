@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+              'sabina-ramirez': {
+    slug: 'sabina-ramirez',
+    txid: '91fa432c1b051c4e8bc9b396b924ed9ef2835b6c2e00f90f720ae1a33b482991',
+    tokenId: '91fa432c1b051c4e8bc9b396b924ed9ef2835b6c2e00f90f720ae1a33b482991',
+    title: 'Sabina Ramirez',
+    nombreCompleto: 'Sabina Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2023-10-20',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'IKAL CALIENTE', //  Ikal Caliente
+    madre: 'REYNA RAMIREZ', // Reyna Ramirez
+    registroFCM: 'FCMZZ0792-C',                  
+    microchip: '939000002715732',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'sabina',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Sabina Ramirez dentro del Archivo del Linaje Vivo."'
+  },
            'papalotl-ramirez': {
     slug: 'papalotl-ramirez',
     txid: '999ecf726d29b2dc4866b226d9c5e550da40fe5a9949d550c4a381affe53b1e7',
