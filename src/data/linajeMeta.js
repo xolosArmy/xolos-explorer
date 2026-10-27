@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+                'tula-ramirez': {
+    slug: 'tula-ramirez',
+    txid: 'c6d67d82b53c2d94751ee3aaf487fdcdac2c945319f65b435fc29b198d3e8e95',
+    tokenId: 'c6d67d82b53c2d94751ee3aaf487fdcdac2c945319f65b435fc29b198d3e8e95',
+    title: 'Tula Ramirez',
+    nombreCompleto: 'Tula Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2023-03-07',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'IKAL CALIENTE', //  Ikal Caliente
+    madre: 'JADE RAMIREZ', // Jade Ramirez
+    registroFCM: 'FCMA6280-B',                  
+    microchip: '939000002703402',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'tula',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Tula Ramirez dentro del Archivo del Linaje Vivo."'
+  },
               'aruma-ramirez': {
     slug: 'aruma-ramirez',
     txid: '8f9d0638a8c0d4df260a0d89617287f2df258c4e215ed9a7cb471c91e5013d75',
