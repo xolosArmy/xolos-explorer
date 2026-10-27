@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+              'aruma-ramirez': {
+    slug: 'aruma-ramirez',
+    txid: '8f9d0638a8c0d4df260a0d89617287f2df258c4e215ed9a7cb471c91e5013d75',
+    tokenId: '8f9d0638a8c0d4df260a0d89617287f2df258c4e215ed9a7cb471c91e5013d75',
+    title: 'Aruma Ramirez',
+    nombreCompleto: 'Aruma Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Macho',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2020-04-20',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'IKAL CALIENTE', //  Ikal Caliente
+    madre: 'CALIMAYA ALVARADO', // Calimaya Alvarado
+    registroFCM: 'FCMD1612',                  
+    microchip: '939000002569146',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'aruma',
+      'adulto',
+      'sin-pelo',
+      'macho',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Aruma Ramirez dentro del Archivo del Linaje Vivo."'
+  },
               'sabina-ramirez': {
     slug: 'sabina-ramirez',
     txid: '91fa432c1b051c4e8bc9b396b924ed9ef2835b6c2e00f90f720ae1a33b482991',
