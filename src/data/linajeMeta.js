@@ -3,6 +3,39 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+           'mimosa-ramirez': {
+    slug: 'mimosa-ramirez',
+    txid: '2a40ed39f83a48a89aa79c464c43ceff1fb65239fff1210a7a79709d9548f0d5',
+    tokenId: '2a40ed39f83a48a89aa79c464c43ceff1fb65239fff1210a7a79709d9548f0d5',
+    title: 'Mimosa Ramirez',
+    nombreCompleto: 'Mimosa Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Adulto',
+    fechaNacimiento: '2023-03-07',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'IKAL CALIENTE', //  Ikal Caliente
+    madre: 'JADE RAMIREZ', // Jade Ramirez
+    registroFCM: 'FCMA6280-C',                  
+    microchip: '939000002703445',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'mimosa',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Mimosa Ramirez dentro del Archivo del Linaje Vivo. Como dato curioso a Mimosa le decimos de cariño Mimo Lee porque hace un sonido muy parecido al de un karateca al expresarse en comunicacion con otros xoloitzcuintles"'
+  },
           'xiuh-ramirez': {
     slug: 'xiuh-ramirez',
     txid: 'e2384d8728fc958c459b4859619938ddda4b1dd0e4ca47aac0779a26496eb9db',
