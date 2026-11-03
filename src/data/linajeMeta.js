@@ -3,6 +3,38 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+                'xilonen-ramirez': {
+    slug: 'xilonen-ramirez',
+    txid: 'ed4124cb645395306234e3625f02c580e768eabfe4444cf148bd455f929f5cb1',
+    tokenId: 'ed4124cb645395306234e3625f02c580e768eabfe4444cf148bd455f929f5cb1',
+    title: 'Xilonen Ramirez',
+    nombreCompleto: 'Xilonen Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Negro',
+    variedad: 'Sin pelo',
+    etapa: 'Joven',
+    fechaNacimiento: '2026-07-16',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'PITAGORAS RAMIREZ', //  Pitágoras Ramirez
+    madre: 'REYNA RAMIREZ', // Reyna Ramirez                
+    microchip: '900255002789427',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'tula',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'negro',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Xilonen Ramirez dentro del Archivo del Linaje Vivo."'
+  },
                 'tula-ramirez': {
     slug: 'tula-ramirez',
     txid: 'c6d67d82b53c2d94751ee3aaf487fdcdac2c945319f65b435fc29b198d3e8e95',
