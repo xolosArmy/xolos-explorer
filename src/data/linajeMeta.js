@@ -1675,6 +1675,19 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
         sistema: 'Tonalli Wallet',
         coleccion: 'xolosArmy Community',
         estado: 'transferido'
+      },
+      {
+        tipo: 'community-nft-episodio',
+        titulo: 'The Xolos Ramírez Show — Mixa Ramírez',
+        tokenId: 'aeca163300de885fb58b1c21cf6c2e775caa23e4508aa63148323be9dda5f23f',
+        txid: 'aeca163300de885fb58b1c21cf6c2e775caa23e4508aa63148323be9dda5f23f',
+        memoTxid: 'a81eede7592973a0e25067370e60a1c3a0acb982a27b14e3b442838c20b0c080',
+        videoUrl: 'https://www.youtube.com/watch?v=_P4e9BpxQuo',
+        fechaRegistro: '2026-11-07',
+        red: 'eCash',
+        sistema: 'Tonalli Wallet',
+        coleccion: 'xolosArmy Community',
+        estado: 'publicado'
       }
     ],
     registroDocumental: {
