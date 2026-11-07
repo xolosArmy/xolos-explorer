@@ -1687,7 +1687,9 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
         red: 'eCash',
         sistema: 'Tonalli Wallet',
         coleccion: 'xolosArmy Community',
-        estado: 'publicado'
+        transferenciaTxid: '7e648bd5a26e679fafa0c11f5e544e3ed3eb6631afd6cbc7218a861f722cb731',
+        destino: 'ecash:qzpn894u9937kurf9uydecsmw0r5zw048q39h7sn0w',
+        estado: 'transferido'
       }
     ],
     registroDocumental: {
