@@ -3933,6 +3933,9 @@ function TokenPage() {
     () => resolveLinajeMetaForToken({ tokenId, ipfsMeta, token }),
     [ipfsMeta, token, tokenId],
   );
+  const episodioCommunityNfts = localMeta?.documentosOnChain?.filter(
+    (item) => item.tipo === 'community-nft-episodio',
+  ) || [];
   const [imageFailed, setImageFailed] = React.useState(false);
   const onChainDocumentHash = React.useMemo(() => extractTokenDocumentHash(token), [token]);
   const sourceDocumentUrl = ipfsState.resolvedUrl || ipfsState.documentUrl || token?.genesisInfo?.url || token?.url || '';
@@ -4253,6 +4256,30 @@ function TokenPage() {
               <Box><strong>{localMeta.idPerroServicio}</strong></Box>
             </>
           ) : null}
+
+          {episodioCommunityNfts.map((documento) => (
+            <React.Fragment key={documento.tokenId}>
+              <SectionTitle>Community NFT · The Xolos Ramírez Show</SectionTitle>
+              <Box style={{ display: 'grid', gap: '10px', wordBreak: 'break-word' }}>
+                <strong>{documento.titulo}</strong>
+                <div>
+                  NFT: <Link to={`/token/${documento.tokenId}`} style={{ color: '#7dffe4' }}>
+                    {documento.tokenId}
+                  </Link>
+                </div>
+                <div>
+                  Tonalli Memo: <Link to={`/tx/${documento.memoTxid}`} style={{ color: '#7dffe4' }}>
+                    {documento.memoTxid}
+                  </Link>
+                </div>
+                <div>
+                  <a href={documento.videoUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#7dffe4' }}>
+                    Ver entrevista completa
+                  </a>
+                </div>
+              </Box>
+            </React.Fragment>
+          ))}
 
           <SectionTitle>Metadatos IPFS</SectionTitle>
           <Box>
