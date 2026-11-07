@@ -4272,6 +4272,16 @@ function TokenPage() {
                     {documento.memoTxid}
                   </Link>
                 </div>
+                {documento.transferenciaTxid ? (
+                  <div>
+                    Transferencia: <Link to={`/tx/${documento.transferenciaTxid}`} style={{ color: '#7dffe4' }}>
+                      {documento.transferenciaTxid}
+                    </Link>
+                  </div>
+                ) : null}
+                {documento.destino ? (
+                  <div>Destino: {documento.destino}</div>
+                ) : null}
                 <div>
                   <a href={documento.videoUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#7dffe4' }}>
                     Ver entrevista completa
