@@ -3,6 +3,38 @@ const LINAJE_META_VERSION = '2026-03-27';
 // Metadata editorial local para enriquecer fichas narrativas.
 // Fuente de verdad on-chain: el OP_RETURN siempre manda.
 export const LINAJE_EDITORIAL_META = Object.freeze({
+                'xochitl-ramirez': {
+    slug: 'xochitl-ramirez',
+    txid: 'a58412e07a6c793679bdb85b62809458ad6af274a5cc145654e724e149d891fa',
+    tokenId: 'a58412e07a6c793679bdb85b62809458ad6af274a5cc145654e724e149d891fa',
+    title: 'Xochitl Ramirez',
+    nombreCompleto: 'Xochitl Ramirez',
+    afijo: 'Ramirez',
+    sexo: 'Hembra',
+    color: 'Bermejo',
+    variedad: 'Sin pelo',
+    etapa: 'Joven',
+    fechaNacimiento: '2026-07-04',
+    lugarNacimiento: 'Ciudad de México, México',
+    criador: 'Xolos Ramirez (Fernando Ramirez Gutierrez/Alexandra Ramirez Gutierrez)',
+    padre: 'AZTLAN RAMIREZ', //  Aztlán Ramirez
+    madre: 'AXIA RAMIREZ', // Axia Ramirez                
+    microchip: '900255002789421',    
+    theme: 'genesis-line',
+    accent: '#1e1e1e',
+    tags: [
+      'xoloitzcuintle',
+      'linaje',
+      'ramirez',
+      'xochitl',
+      'adulto',
+      'sin-pelo',
+      'hembra',
+      'bermejo',
+      'on-chain'
+    ],
+    nota: '				"Registro on-chain de Xochitl Ramirez dentro del Archivo del Linaje Vivo."'
+  },
                 'xilonen-ramirez': {
     slug: 'xilonen-ramirez',
     txid: 'ed4124cb645395306234e3625f02c580e768eabfe4444cf148bd455f929f5cb1',
@@ -26,7 +58,7 @@ export const LINAJE_EDITORIAL_META = Object.freeze({
       'xoloitzcuintle',
       'linaje',
       'ramirez',
-      'tula',
+      'xilonen',
       'adulto',
       'sin-pelo',
       'hembra',
