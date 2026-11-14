@@ -1,0 +1,81 @@
+{
+  "mandate": "XR-LINEAGE-MCP-01",
+  "deliverable": "PR-01",
+  "review_date": "2026-11-14",
+  "meaning": "Immutable audit references; not a runtime census, tag freeze, or deployment attestation.",
+  "repositories": [
+    {
+      "repository": "xolosArmy/xolos-explorer",
+      "commit": "6cc1b4ec2ed582c689c83352b0ffb8cdcd04c60f",
+      "local_checkout_commit": "9f927eee879057da36825a7482df5c8f6e5f4b1f",
+      "files": {
+        "src/data/linajeIndex.js": "aa3a0ec6e9c1f571e71f41e4b59a1f495608c3e1",
+        "src/data/linajeMeta.js": "0afaf4a2ae0358ead734214b4bc427f7e8f5bc9a",
+        "src/App.jsx": "527f02afc3a2c32ff3ae5faff000cc0dd57de9ba",
+        "src/utils/ipfsMetadata.js": "d7054370b4702e5fe97eaadf37b3b4656a998129"
+      },
+      "url": "https://github.com/xolosArmy/xolos-explorer/tree/6cc1b4ec2ed582c689c83352b0ffb8cdcd04c60f"
+    },
+    {
+      "repository": "xolosArmy/Business_network",
+      "commit": "a533cabbcb9a28149be75393c84e6cf68807611b",
+      "files": {
+        "data/lineages.json": "ff0fc808b1ee784804161f2068cfec03d5126ea3",
+        "data/metrics.json": "1c616934eeada804cc9a7f95b5f3dab8c2ed5707",
+        "data/recent-registrations.json": "f0abee20b0ee6574c6112f47dd49c28beedbff1f"
+      },
+      "url": "https://github.com/xolosArmy/Business_network/tree/a533cabbcb9a28149be75393c84e6cf68807611b"
+    },
+    {
+      "repository": "xolosArmy/xolo-oracle-indexer",
+      "commit": "455aff43bd0e41cfa8a304c1b1e2045192c923ad",
+      "local_checkout_commit": "455aff43bd0e41cfa8a304c1b1e2045192c923ad",
+      "files": {
+        ".github/workflows/test.yml": "b31dc16ee57185f4ddc0bb4f7b5509c305ee211c",
+        ".gitignore": "25cacc7775fc40314335a4c4bacb6c9bde07f283",
+        "README.md": "06369d59d655a932d45f8df6102831d0db5c02f6",
+        "deploy/indexer.env.example": "32396a480cc55f59b89af3f3c2b84473e171bac9",
+        "deploy/xolo-oracle-alert.service": "2afa10fdbfe6b0db0b6f9ece56de0bea358652e6",
+        "deploy/xolo-oracle-freshness.service": "9ee6b003016d86f0cee42e897b1cddc864060493",
+        "deploy/xolo-oracle-freshness.timer": "84acb47dce32a6929baab5b6fcc78c83d6c0619c",
+        "deploy/xolo-oracle.logrotate": "c299cb4250a9414713c00feb82398ba626d2d959",
+        "deploy/xolo-oracle.service": "ea3f58a96d69d2791b884226d7b866849abe191c",
+        "deploy/xolo-oracle.timer": "3f90c1cf845b641638a11ac9892cab7bf69164a7",
+        "fixtures/explorer-genealogy.json": "737e666e70c8f8a983d45c0eaef8b3f4569dcbfe",
+        "fixtures/explorer.json": "a4985e608612aebf3a692010bb9c4bd8f425e98a",
+        "fixtures/lineages.json": "4fb4b877b6d9f1992c8cc8a4f4d9183131040b39",
+        "fixtures/metrics.json": "adeab166ee7f8810beca9138db3c44eb50981341",
+        "fixtures/recent-registrations.json": "29b076d16a9c1ad517ac23c6ae099f5e7c509e42",
+        "package-lock.json": "3bb823553ee0b96f087dc4904a9d7f6c5468264e",
+        "package.json": "df22252e4491a4ac30a3fee0fa2878f94e517ecd",
+        "src/census.mjs": "a047f99c2aef19fb80d8246ca4863795e4faa0f6",
+        "src/chronik.mjs": "bf804decb05df5360f233e56c85b26ffc9a05c23",
+        "src/cli.mjs": "d5de542ff3fee8d22a2022eb52f67295e9e1389d",
+        "src/genealogy.mjs": "a3d88ff998f21e9c291563ee637d03c9b080203e",
+        "src/ipfs.mjs": "a270d7095995519f056b198d31168513620d373b",
+        "src/protocol.mjs": "c9280c5ef7cdd029bca9fd175484d71d5a9ae059",
+        "src/publish.mjs": "2177d374a8da53a78da3eca3012b05fcbc070d28",
+        "src/run.mjs": "2ace44f0d989f92670eb35bcbdd88e81477857a5",
+        "test/oracle.test.mjs": "c97cde8c06c1c338363cb89e3cc1a1e0f32b8a4d",
+        "test/publish.test.mjs": "1f0f7d949c6f0491de2d5d0cdf98196837cd7bec"
+      },
+      "url": "https://github.com/xolosArmy/xolo-oracle-indexer/tree/455aff43bd0e41cfa8a304c1b1e2045192c923ad"
+    }
+  ],
+  "observed_publication": {
+    "repository": "xolosArmy/Business_network",
+    "commit": "a533cabbcb9a28149be75393c84e6cf68807611b",
+    "commit_signature_status": "unsigned",
+    "pages_run_id": 43551955997,
+    "pages_run_conclusion": "success",
+    "pages_run_url": "https://github.com/xolosArmy/Business_network/actions/runs/43551955997"
+  },
+  "not_attested": [
+    "active_vps_release",
+    "active_timers",
+    "private_network_topology",
+    "live_chronik_checkpoint",
+    "individual_nft_verification",
+    "live_pages_bytes"
+  ]
+}
